@@ -1,4 +1,9 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+
+const colors = {
+  primary: "#51459E",
+  secondary: "#9698AB"
+}
 
 const config: Config = {
   content: [
@@ -8,6 +13,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        ...colors
+      },
+      fill: {
+        ...colors
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
