@@ -15,6 +15,7 @@ import {
   User,
 } from "@phosphor-icons/react";
 import WidgetA from "@/components/WidgetA";
+import Image from "next/image";
 // import VerticalMenu from "../components/VerticalMenu";
 // 1:16:52
 
@@ -23,7 +24,7 @@ export default function Home() {
     <div>
       <section className="flex justify-between mt-7">
         <div className="flex flex-col">
-          <h1 className="text-primary font-bold text-3xl">Analytics</h1>
+          <h1 className="text-primary font-bold text-3xl">Hello Guys</h1>
           <p className="text-[#9A9A9A] font-semibold text-[15px] mt-1">
             Welcome back, Let&#39;s get back to work.
           </p>
@@ -54,31 +55,57 @@ export default function Home() {
       </section>
       <section className="flex justify-between my-14">
         <div className="w-[342px]">
-          <div className="flex justify-between">
+          <div className="flex justify-between mb-3">
             <h3 className="text-primary font-bold text-[16px]">
               Latest Customers
             </h3>
             <span className="text-[#9A9A9A]">View All</span>
           </div>
-          <div className="flex flex-row bg-[#F9F9F9] py-[13px] px-2 rounded-lg">
-            <img
-              src="/images/harry-joe.png"
-              alt="profil-customer"
-              width={37}
-              height={37}
-              className="object-cover object-center rounded-[4px]"
-            />
-            <div className="flex flex-col ml-2 mr-auto">
-              <p className="text-[#5B5B5B] text-sm font-semibold">Harry Joe</p>
-              <span className="text-[#9698AB] text-[10px]">
-                24 Purchses | 123 Likes
-              </span>
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="rounded-full bg-white shadow-sm shadow-[#5B5B5B] w-[32px] h-[32px] flex items-center justify-center mr-4">
-                <span>
-                  <EnvelopeSimple size={10} />
+          <div className="flex flex-col gap-y-4">
+            <div className="flex flex-row bg-[#F9F9F9] py-[13px] px-2 rounded-lg">
+              <Image
+                src="/images/harry-joe.png"
+                alt="profil-customer"
+                width={37}
+                height={37}
+                className="object-cover object-center rounded-[4px]"
+              />
+              <div className="flex flex-col ml-2 mr-auto">
+                <p className="text-[#5B5B5B] text-sm font-semibold">
+                  Alexander Khan
+                </p>
+                <span className="text-[#9698AB] text-[10px]">
+                  24 Purchses | 123 Likes
                 </span>
+              </div>
+              <div className="flex justify-center items-center">
+                <div className="rounded-full bg-white shadow-sm shadow-[#5B5B5B] w-[32px] h-[32px] flex items-center justify-center mr-4">
+                  <span>
+                    <EnvelopeSimple size={10} />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row bg-[#F9F9F9] py-[13px] px-2 rounded-lg">
+              <Image
+                src="/images/harry-joe.png"
+                alt="profil-customer"
+                width={37}
+                height={37}
+                className="object-cover object-center rounded-[4px]"
+              />
+              <div className="flex flex-col ml-2 mr-auto">
+                <p className="text-[#5B5B5B] text-sm font-semibold">Daffa</p>
+                <span className="text-[#9698AB] text-[10px]">
+                  24 Purchses | 123 Likes
+                </span>
+              </div>
+              <div className="flex justify-center items-center">
+                <div className="rounded-full bg-white shadow-sm shadow-[#5B5B5B] w-[32px] h-[32px] flex items-center justify-center mr-4">
+                  <span>
+                    <EnvelopeSimple size={10} />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -91,10 +118,15 @@ export default function Home() {
             <span className="text-[#9A9A9A] text-sm">View All</span>
           </div>
           <div className="flex flex-row justify-between mt-12">
-            <div className="w-[112px] flex  items-center">
+            <div className="w-[200px] flex flex-col items-start">
               <div>
                 <h3 className="text-lg text-[#9698AB]">Current Level</h3>
                 <p className="text-sm text-[#5B5B5B]">Expert</p>
+              </div>
+              <div className="mt-auto">
+                <h3 className="text-lg text-[#9698AB]">Tools</h3>
+                <p className="text-sm text-[#5B5B5B]">Typescript/Javascript</p>
+                <p className="text-sm text-[#5B5B5B]">React/Next</p>
               </div>
             </div>
             <div className="w-36">

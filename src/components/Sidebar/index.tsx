@@ -13,6 +13,7 @@ import {
   ReadCvLogo,
   ShareNetwork,
   Tag,
+  User,
 } from "@phosphor-icons/react";
 import Image from "next/image";
 
@@ -67,12 +68,6 @@ export default function Sidebar({}: Props) {
         className="gap-y-9"
         lists={[
           {
-            id: "calendar",
-            link: <Link href="/calendar">Calendar</Link>,
-            slug: "/calendar",
-            icon: <Calendar size={20} />,
-          },
-          {
             id: "shared-files",
             link: <Link href="/shared-files">Shared Files</Link>,
             slug: "/shared-files",
@@ -97,7 +92,7 @@ export default function Sidebar({}: Props) {
             className="absolute left-1/2 transform -translate-x-1/2 bottom-0"
           />
           <button className="absolute whitespace-nowrap top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white pt-4 pb-3 px-5 z-10 rounded-2xl shadow-[1px_10px_60px_0px_rgba(0,_0,_0,_0.25">
-            Let's Talk
+            Let&apos;s Talk
           </button>
         </div>
       </div>

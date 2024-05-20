@@ -13,10 +13,12 @@ import {
 } from "@phosphor-icons/react";
 import Stack from "design-system/dist/components/Chart/Stack";
 import Gauge from "design-system/dist/components/Chart/Gauge";
+import { useRouter } from "next/navigation";
 
 type Props = {};
 
 export default function Addon({}: Props) {
+  const router = useRouter();
   return (
     <div className="w-[324px] h-[1000px]">
       <div className="relative flex w-full h-full overflow-hidden">
@@ -47,6 +49,7 @@ export default function Addon({}: Props) {
               </button>
             </Button>
             <Button
+              onClick={() => router.push("/about-profile")}
               size="md"
               state="custom"
               className="bg-white shadow-lg aspect-square items-center justify-center text-gray-500 inline-flex flex-none"
